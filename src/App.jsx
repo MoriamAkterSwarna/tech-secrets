@@ -13,7 +13,14 @@ function App() {
     <div className="App">
       <Header></Header>
 
-      <Blogs></Blogs>
+      <div className='grid grid-cols-2 ml-14'>
+        <div>
+          <Blogs></Blogs>
+        </div>
+      <div className=''>
+        <h4>Spent time on read : 0 min</h4>
+      </div>
+      </div>
       
     </div>
   )

@@ -10,10 +10,10 @@ const Blogs = () => {
     },[])
     // console.log(blogs);
     return (
-        <div className='grid grid-cols-1'>
+        <div className='grid grid-cols-1 gap-12 my-10'>
            {
             // blogs.map( blog => <SingleBlog></SingleBlog>)
-            blogs.map(blog =><SingleBlog blog={blog}></SingleBlog>)
+            blogs.map(blog =><SingleBlog key={blog.id} blog={blog}></SingleBlog>)
            }
         </div>
     );
