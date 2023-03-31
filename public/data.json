@@ -1,7 +1,7 @@
 [
   {
     "kind": "#webdevelopment #blog",
-    "id": 3213900,
+    "id": 321390,
     "authorName": "Julian Wan",
     "title": "7 Free Public APIs you will love as a developer",
     "published": "2023-02-09",
@@ -10,11 +10,12 @@
     "selfLink": "https://www.googleapis.com/blogger/v3/blogs/3213900",
     "img": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "time": "3",
+    "quantity" : 0,
     "cover": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
   },
   {
     "kind": "#programming #webdevelopment",
-    "id": 3212733,
+    "id": 321278,
     "authorName": "Imaad Hasan",
     "title": "Want to become better at Frontend development?",
     "published": "2023-02-20",
@@ -23,11 +24,12 @@
     "selfLink": "https://www.googleapis.com/blogger/v3/blogs/3213900",
     "img": "https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=721&q=80",
     "time": "21",
+    "quantity" : 0,
     "cover": "https://plus.unsplash.com/premium_photo-1661662822053-399798abee3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
   },
   {
     "kind": "#gamedevelpment #coding",
-    "id": 32139074,
+    "id": 321389,
     "authorName": "Ibrahim Khalil",
     "title": "6 free tools I use to increase coding productivity",
     "published": "2022-09-13",
@@ -36,6 +38,7 @@
     "selfLink": "https://www.googleapis.com/blogger/v3/blogs/3213900",
     "img": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
     "time": "13",
+    "quantity" : 0,
     "cover": "https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80"
   },
   {
@@ -49,6 +52,7 @@
     "selfLink": "https://www.googleapis.com/blogger/v3/blogs/3213900",
     "img": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "time": "8",
+    "quantity" : 0,
     "cover": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
   }
   

@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import SingleBlog from '../SingleBlog/SingleBlog';
 
 
-const Blogs = ({blogs,handleReadTime,handleBookmark}) => {
-    
+const Blogs = ({blogs,handleReadTime,handleBookmark,isBookMark}) => {
+
     
     return (
         <div className='container ml-24'>
            <div className='my-10' >
                 {
-                    blogs.map(blog =><SingleBlog handleReadTime={handleReadTime} handleBookmark={handleBookmark} key={blog.id} blog={blog}></SingleBlog>)
+                    blogs.map(blog =><SingleBlog handleReadTime={handleReadTime} handleBookmark= {handleBookmark} isBookMark={isBookMark} key={blog.id} blog={blog}></SingleBlog>)
                 }
            </div>
            

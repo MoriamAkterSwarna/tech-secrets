@@ -20,17 +20,17 @@ const QnA = () => {
                 </div>
                 <div className="collapse-content"> 
                     <p>In React, useState() is a hook that allows functional components to have state. useState() takes an initial value as its argument and returns an array with two elements: the current state value and a function that can be used to update the state.
-                        <p>When a functional component that uses useState() is first rendered, React initializes the state value by calling the useState() function with the initial value.
+                        When a functional component that uses useState() is first rendered, React initializes the state value by calling the useState() function with the initial value.
 
-                        The useState() function returns an array with two elements: the current state value and a function that can be used to update the state value. React also creates a reference to the state value and its associated update function.
+                        The useState() function returns an array with two elements: the current state value and a function that can be used to update the state value. React also creates a reference to the state value and its associated update function. <br />
 
-                        When the component is rendered, the current state value is used to determine what content should be displayed on the screen.
+                        When the component is rendered, the current state value is used to determine what content should be displayed on the screen. <br />
 
-                        If the component needs to update its state value, the update function returned by useState() is called with the new value. This triggers a re-render of the component.
+                        If the component needs to update its state value, the update function returned by useState() is called with the new value. This triggers a re-render of the component. <br />
 
                         When the component re-renders, the updated state value is used to determine what content should be displayed on the screen.
 
-                        The process continues as the component is rendered and updated based on changes to its state.</p>
+                        The process continues as the component is rendered and updated based on changes to its state.
                     </p>
                 </div>
                 </div>
