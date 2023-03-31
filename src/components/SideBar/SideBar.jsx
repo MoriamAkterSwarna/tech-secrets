@@ -18,7 +18,7 @@ const SideBar = ({blogs,readTime}) => {
             
             <p className='font-bold text-xl mb-4'>Bookmark Blogs: {blogs.length}</p>
             {
-                    blogs.map(blog => <li>{blog.title}</li>)
+                    blogs?.map(blog => <li>{blog.title}</li>)
             }
         </div>
     );

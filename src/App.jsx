@@ -5,6 +5,10 @@ import Blogs from './components/Blogs/Blogs'
 import QnA from './components/QnA/QnA'
 import SideBar from './components/SideBar/SideBar'
 import { addToBookmark, getBookmark } from './utilities/fakedb'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 
 function App() {
@@ -39,7 +43,9 @@ function App() {
     const getBookmark = bookMark.find(bk => bk.id === blog.id);
   
     if(getBookmark){
-      console.log("already bookmarked");
+      // console.log("already bookmarked");
+      toast("Already Bookmarked!");
+
     }
     const newBookmarked = [...bookMark , blog];
     setBookMark(newBookmarked);
@@ -52,7 +58,7 @@ function App() {
    for(const title in getBookmarks){
     // console.log(blogs)
     const bookmarked = blogs.find(blog => blog.title === title);
-    // console.log(bookmarked);
+    console.log(bookmarked);
   {
     if(bookmarked){
         storeBookmarked.push(bookmarked);
@@ -61,6 +67,7 @@ function App() {
    }
    setBookMark(storeBookmarked)
  },[blogs])
+//  console.log(blogs);
 
   return (
     <div className="App">
@@ -69,7 +76,7 @@ function App() {
       <div className='grid grid-cols-3'>
         
           <div className='col-span-2'>
-            <Blogs blogs={blogs} handleBookmark={handleBookmark} handleReadTime={handleReadTime} ></Blogs>
+            <Blogs blogs={blogs} key={blogs.id} handleBookmark={handleBookmark} handleReadTime={handleReadTime} ></Blogs>
           </div>
           <div className='pl-20 ml-20'>
             
@@ -78,7 +85,7 @@ function App() {
            </div>
       
       </div>
-      
+      <ToastContainer></ToastContainer>
       <QnA></QnA>
     </div>
   )
