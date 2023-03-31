@@ -2,12 +2,12 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
-const SingleBlog = ({blog, handleReadTime}) => {
+const SingleBlog = ({blog, handleReadTime,handleBookmark}) => {
     const {cover,title,img,kind,authorName,published,time} =blog;
     return (
-        <div>
+        <div className='mb-14'>
             <div className="card card-compact bg-base-100 shadow-2xl">
-                <figure className='mt-4'><img style={{height:"400px"}} src={cover} alt="Programming" /></figure>
+                <figure><img style={{height:"400px"}} className='w-full' src={cover} alt="Programming" /></figure>
                 <div className="card-body ml-10">
                     <div className='flex justify-between'>
                         <div className='flex'>
@@ -19,7 +19,7 @@ const SingleBlog = ({blog, handleReadTime}) => {
                             
                         </div>
                         <div className='mr-12'>
-                                <p><span>{time}</span> min read <FontAwesomeIcon icon={faBookmark} /></p>
+                                <p><span>{time}</span> min read <span onClick={()=>handleBookmark(blog)}><FontAwesomeIcon icon={faBookmark} /></span></p>
                             </div>
                     </div>
                     <h2 className="card-title text-2xl font-bold">{title}</h2>
