@@ -19,7 +19,7 @@ const SingleBlog = ({blog, handleReadTime,handleBookmark}) => {
                             
                         </div>
                         <div className='mr-12'>
-                                <p><span>{time}</span> min read <span onClick={()=>handleBookmark(blog)}><FontAwesomeIcon icon={faBookmark} /></span></p>
+                                <p><span>{time}</span> min read <span onClick={()=>handleBookmark(blog.id)}><FontAwesomeIcon icon={faBookmark} /></span></p>
                             </div>
                     </div>
                     <h2 className="card-title text-2xl font-bold">{title}</h2>

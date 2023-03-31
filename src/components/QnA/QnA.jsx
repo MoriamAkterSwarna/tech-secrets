@@ -6,13 +6,46 @@ const QnA = () => {
             <h2 className='text-fuchsia-600 text-5xl font-bold mb-10'>Learn More About React</h2>
             <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-xl font-medium">
-                    Focus me to see content
+                    Props VS State
                 </div>
                 <div className="collapse-content"> 
                     <p>tabIndex={0} attribute is necessary to make the div focusable</p>
                 </div>
                 </div>
+
+                <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div className="collapse-title text-xl font-medium">
+                How useState() works?
+                </div>
+                <div className="collapse-content"> 
+                    <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                </div>
+                </div>
+
+
+                <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div className="collapse-title text-xl font-medium">
+                    Except API data load in which work is done by useEffect()?
+                </div>
+                <div className="collapse-content"> 
+                    <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                </div>
+                </div>
+
+
+                <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div className="collapse-title text-xl font-medium">
+                    How does React work?
+                </div>
+                <div className="collapse-content"> 
+                    <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                </div>
+                </div>
+
+                
         </div>
+
+        
     );
 };
 

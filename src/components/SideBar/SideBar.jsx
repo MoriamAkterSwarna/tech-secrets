@@ -4,7 +4,6 @@ import { getBookmark } from '../../utilities/fakedb';
 
 const SideBar = ({blogs,readTime}) => {
     const [times, setTimes] = useState(readTime);
-    const [bookMark, setBookMark] = useState([]);
 
     useEffect(() => {
         const getReadTime = localStorage.getItem("readTime");
