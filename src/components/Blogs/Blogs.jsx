@@ -1,20 +1,25 @@
 import React, { useEffect, useState } from 'react';
+import SideBar from '../SideBar/SideBar';
 import SingleBlog from '../SingleBlog/SingleBlog';
+import './Blogs.css'
 
-const Blogs = () => {
+const Blogs = ({handleReadTime}) => {
+    
     const [blogs, setBlogs] = useState([]);
     useEffect(()=>{
-        fetch('/public/data.json')
+        fetch('/data.json')
         .then(res => res.json())
         .then(data => setBlogs(data))
     },[])
-    // console.log(blogs);
+    
     return (
-        <div className='grid grid-cols-1 gap-12 my-10'>
-           {
-            // blogs.map( blog => <SingleBlog></SingleBlog>)
-            blogs.map(blog =><SingleBlog key={blog.id} blog={blog}></SingleBlog>)
-           }
+        <div className='container ml-24'>
+           <div className='my-10' >
+                {
+                    blogs.map(blog =><SingleBlog handleReadTime={handleReadTime} key={blog.id} blog={blog}></SingleBlog>)
+                }
+           </div>
+           
         </div>
     );
 };
