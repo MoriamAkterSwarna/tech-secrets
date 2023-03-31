@@ -38,24 +38,19 @@ function App() {
   }
 };
 const handleBookmark =(blog)=>{
+  console.log(blog)
   setCount(count+1);
-  // if(count >= 1){
-  //   toast('🦄 Already Bookmarked!', {
-  //     position: "top-right",
-  //     autoClose: 5000,
-  //     hideProgressBar: false,
-  //     closeOnClick: true,
-  //     pauseOnHover: true,
-  //     draggable: true,
-  //     progress: undefined,
-  //     theme: "light",
-  //     });
-  // }
-  // setIsBookMark(isBookMark);
-  // setIsBookMark([])
-    if(isBookMark){
-      setIsBookMark([...isBookMark,blog]);
+    const exist = isBookMark.find(elementTitle => elementTitle===blog);
+    
+    if(exist){
+        toast("Already exist")
+       
+    }else{
+        const newShowData=[...isBookMark,blog];
+        console.log(newShowData);
+    setIsBookMark(newShowData);
     }
+    
 
   
 }
@@ -65,9 +60,9 @@ const handleBookmark =(blog)=>{
     <div className="App">
       <Header></Header>
 
-      <div className='grid grid-cols-3'>
+      <div className='grid grid-cols-1 md:grid-cols-3'>
         
-          <div className='col-span-2'>
+          <div className='md:col-span-2'>
             <Blogs blogs={blogs} key={blogs.id} handleReadTime={handleReadTime} handleBookmark={handleBookmark}></Blogs>
           </div>
           <div className='pl-20 ml-20'>
