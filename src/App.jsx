@@ -14,7 +14,7 @@ function App() {
   const [readTime, setReadTime] = useState(0);
   const [blogs, setBlogs] = useState([]);
   const [count, setCount] =useState(0);
-  const [isBookMark, setIsBookMark] = useState(false);
+  const [isBookMark, setIsBookMark] = useState([]);
 
     useEffect(()=>{
         fetch('/data.json')
@@ -39,7 +39,24 @@ function App() {
 };
 const handleBookmark =(blog)=>{
   setCount(count+1);
-  setIsBookMark(!isBookMark);
+  // if(count >= 1){
+  //   toast('🦄 Already Bookmarked!', {
+  //     position: "top-right",
+  //     autoClose: 5000,
+  //     hideProgressBar: false,
+  //     closeOnClick: true,
+  //     pauseOnHover: true,
+  //     draggable: true,
+  //     progress: undefined,
+  //     theme: "light",
+  //     });
+  // }
+  // setIsBookMark(isBookMark);
+  // setIsBookMark([])
+    if(isBookMark){
+      setIsBookMark([...isBookMark,blog]);
+    }
+
   
 }
  

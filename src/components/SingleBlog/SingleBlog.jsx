@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const SingleBlog = ({blog, handleReadTime,handleBookmark}) => {
     const {cover,title,img,kind,authorName,published,time} =blog;
+    // console.log(handleBookmark())
     return (
         <div className='mb-14'>
             <div className="card card-compact bg-base-100 shadow-2xl">
@@ -19,7 +20,7 @@ const SingleBlog = ({blog, handleReadTime,handleBookmark}) => {
                             
                         </div>
                         <div className='mr-12'>
-                                <p><span>{time}</span> min read <span><FontAwesomeIcon onClick={() => handleBookmark()} icon={faBookmark} /></span></p>
+                                <p><span>{time}</span> min read <span><FontAwesomeIcon onClick={() => handleBookmark(blog.id)} icon={faBookmark} /></span></p>
                             </div>
                     </div>
                     <h2 className="card-title text-2xl font-bold">{title}</h2>
